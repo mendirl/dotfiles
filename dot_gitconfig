@@ -1,0 +1,10 @@
+[user]
+	name = Fabien Couillard
+	email = couillard.fabien+dev@gmail.com
+	username = mendirl
+[init]
+	defaultBranch = main
+[core]
+	autocrlf = input
+[pull]
+	rebase = true
