@@ -1,1 +1,38 @@
 export PATH=$PATH:~/.local/bin
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias ll='ls -ailhs'
+alias llt='ls -ailhstr'
+alias yayclean='yay -Sc'
+PS1='[\u@\h \W]\$ '
+
+export PATH=$PATH:~/.local/bin
+
+
+eval "$(oh-my-posh init bash --config ~/.local/share/ohmyposh/mytheme.json)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# GO
+#export GOPATH=$HOME/.go
+
+alias amount="sudo mount -a"
+
+# autocompletion for asdf
+. <(asdf completion bash)
+
+
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# node
+# npm config set prefix '~/.npm/global'
+export PATH=~/.npm/global/bin:$PATH
