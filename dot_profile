@@ -14,6 +14,8 @@ export PATH=$PATH:~/.local/bin
 
 
 eval "$(oh-my-posh init bash --config ~/.local/share/ohmyposh/mytheme.json)"
+eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/config.json)"
+
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
