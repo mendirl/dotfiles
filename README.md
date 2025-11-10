@@ -40,4 +40,8 @@ curl -s "https://get.sdkman.io" | bash
 ```
 chezmoi init https://github.com/mendirl/dotfiles.git
 ```
-### 
+### config neovim
+```
+git clone https://github.com/LazyVim/starter --depth 1 ~/.config/nvim
+rm -rf ~/.config/nvim/.git*
+```
