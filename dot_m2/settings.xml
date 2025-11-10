@@ -1,0 +1,35 @@
+<settings>
+    <servers>
+        <server>
+            <id>ActiveViamInternalRepository</id>
+            <username>********</username>
+            <password>********</password>
+        </server>
+    </servers>
+    <profiles>
+        <profile>
+            <id>downloadSources</id>
+            <properties>
+                <downloadSources>true</downloadSources>
+                <downloadJavadocs>true</downloadJavadocs>
+            </properties>
+        </profile>
+        <profile>
+            <id>activeviam</id>
+            <repositories>
+                <repository>
+                    <id>ActiveViamInternalRepository</id>
+                    <name>ActiveViam Internal Repository</name>
+                    <url>https://activeviam.jfrog.io/activeviam/mvn/</url>
+                    <layout>default</layout>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>downloadSources</activeProfile>
+    </activeProfiles>
+</settings>
