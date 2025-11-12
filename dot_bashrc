@@ -13,7 +13,6 @@ alias llt='ls -ailhstr'
 
 alias yayclean='yay -Sc'
 
-
 PS1='[\u@\h \W]\$ '
 
 export PATH=$PATH:~/.local/bin
