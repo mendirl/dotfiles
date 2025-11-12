@@ -30,7 +30,7 @@ cd .. && rm -rf yay/
 ```
 ### install applications
 ```
-yay oh-my-posh bun-bin golang chezmoi nvim zip unzip ssh
+yay -S oh-my-posh bun-bin golang chezmoi nvim zip unzip ssh -noconfirm
 ```
 ### install [sdkman](https://sdkman.io/)
 ```
@@ -48,6 +48,5 @@ rm -rf ~/.config/nvim/.git*
 ### config ssh
 ```
 ssh-keygen -t ed25519 -C "fabien.couillard+dev@gmail.com"
-ssh-copy-id fabien@192.168.1.90 -p 2222
-chmod 0600 ~/.ssh/config
+ssh-copy-id -p 2222 fabien@192.168.1.90
 ```
