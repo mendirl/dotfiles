@@ -45,3 +45,9 @@ chezmoi init https://github.com/mendirl/dotfiles.git
 git clone https://github.com/LazyVim/starter --depth 1 ~/.config/nvim
 rm -rf ~/.config/nvim/.git*
 ```
+### config ssh
+```
+ssh-keygen -t ed25519 -C "fabien.couillard+dev@gmail.com"
+ssh-copy-id fabien@192.168.1.90 -p 2222
+chmod 0600 ~/.ssh/config
+```
