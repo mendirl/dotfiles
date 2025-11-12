@@ -30,7 +30,7 @@ cd .. && rm -rf yay/
 ```
 ### install applications
 ```
-yay -S oh-my-posh bun-bin golang chezmoi nvim zip unzip ssh -noconfirm
+yay -S oh-my-posh-bin bun-bin golang chezmoi nvim zip unzip ssh -noconfirm
 ```
 ### install [sdkman](https://sdkman.io/)
 ```
