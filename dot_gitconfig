@@ -6,12 +6,12 @@
 	defaultBranch = main
 [core]
 	autocrlf = input
-        editor = vim
+    editor = vim
 [pull]
 	rebase = true
 [credential]
-        helper = store
+    helper = store
 
 [diff "lockb"]
-        textconv = bun
-        binary = true
+    textconv = bun
+    binary = true
