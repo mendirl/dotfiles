@@ -50,3 +50,6 @@ rm -rf ~/.config/nvim/.git*
 ssh-keygen -t ed25519 -C "fabien.couillard+dev@gmail.com"
 ssh-copy-id -p 2222 fabien@192.168.1.90
 ```
+### need to know
+##### + contact windows from WSL2
+use this : ```"$(hostname).local"```
