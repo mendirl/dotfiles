@@ -15,10 +15,18 @@ alias yayclean='yay -Sc'
 
 PS1='[\u@\h \W]\$ '
 
+
+HISTSIZE=10000
+HISTFILESIZE=20000
+HISTCONTROL=ignoredups:erasedups
+
+
 export PATH=$PATH:~/.local/bin
 
 ## GOLANG
+export GOROOT=/usr/lib/go
 export GOPATH=$HOME/.go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 
 ## OH-MY-POSH
@@ -27,3 +35,7 @@ eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/config.json)"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+
+alias mvnv='mvn clean verify -DskipTests'
+alias mvnt='mvn test'
