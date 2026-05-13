@@ -56,4 +56,5 @@ use this : ```"$(hostname).local"``` (FIXE-WIN.local in my case)
 
 #####  issue with chezmoi
 https://github.com/microsoft/WSL/issues/10498
+
 ``` sudo mkdir /run/user/1000 && sudo chmod 700 /run/user/1000 && sudo chown $(whoami): /run/user/1000 ```
