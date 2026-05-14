@@ -62,6 +62,8 @@ sudo mkdir /run/user/1000 && sudo chmod 700 /run/user/1000 && sudo chown $(whoam
 ```
 
 
+## LLM
+
 #### tester ollama (windows) depuis wsl
 
 ```bash
@@ -87,3 +89,6 @@ curl http://YOGAxWIN.local:11434/api/chat -d '{
   "stream": false
 }'
 ```
+
+### utilisation de mcp toolbox de docker desktop
+si le mcp fait référence à un serveur se trouvant dans docker, il faut utiliser l'url : `host.docker.internal`
