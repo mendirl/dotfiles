@@ -11,7 +11,7 @@ alias ls='ls --color=auto'
 alias ll='ls -ailhs'
 alias llt='ls -ailhstr'
 
-alias yayclean='yay -Sc'
+alias yayclean='sudo rm -rv /var/cache/pacman/pkg/download-* && yay -Sc'
 
 PS1='[\u@\h \W]\$ '
 
@@ -28,6 +28,8 @@ export GOROOT=/usr/lib/go
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
+## BUN
+export PATH="/home/fabien/.bun/bin:$PATH"
 
 ## OH-MY-POSH
 eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/config.json)"
