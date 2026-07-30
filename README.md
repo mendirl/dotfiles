@@ -40,6 +40,10 @@ curl -s "https://get.sdkman.io" | bash
 ```
 chezmoi init https://github.com/mendirl/dotfiles.git
 ```
+##### modif de fichiers directement (ex.)
+```
+chezmoi re-add .bashrc
+```
 ### config neovim
 ```
 git clone https://github.com/LazyVim/starter --depth 1 ~/.config/nvim
