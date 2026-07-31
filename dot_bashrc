@@ -29,7 +29,12 @@ export GOPATH=$HOME/.go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 ## BUN
-export PATH="/home/fabien/.bun/bin:$PATH"
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# NODE
+# npm config set prefix '~/.npm/global'
+export PATH=~/.npm/global/bin:$PATH
 
 ## OH-MY-POSH
 eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/config.json)"
